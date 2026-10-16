@@ -1,0 +1,11 @@
+.requests-list {
+  display: grid;
+  gap: 20px;
+}
+.requests-page > .tabs {
+  gap: 7px;
+}
+.requests-page > .tabs .tab {
+  font-size: 0.78rem;
+  padding: 10px 14px;
+}

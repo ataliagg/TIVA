@@ -1,0 +1,20 @@
+.not-found {
+  text-align: center;
+  padding-block: 80px;
+}
+.not-found > span {
+  font-family: Manrope, sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  color: #c7ddff;
+  letter-spacing: -6px;
+}
+.not-found h1 {
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+.not-found p {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 27px;
+}
