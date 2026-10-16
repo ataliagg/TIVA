@@ -1,0 +1,253 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 26px;
+}
+.profile-main {
+  display: grid;
+  gap: 23px;
+  min-width: 0;
+}
+.profile-main .panel > h2,
+.profile-main .section-heading h2 {
+  font-size: 1.2rem;
+}
+.profile-main .section-heading {
+  margin-bottom: 0;
+}
+.profile-main .section-heading > .muted {
+  font-size: 0.7rem;
+}
+.profile-identity {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.profile-identity h1 {
+  font-size: 1.9rem;
+  margin: 12px 0 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.profile-verified {
+  color: var(--blue);
+}
+.profile-identity > div > p {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 13px;
+}
+.profile-identity .tag {
+  font-size: 0.7rem;
+}
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 27px;
+  padding-top: 23px;
+  border-top: 1px solid var(--line);
+}
+.profile-stats > div {
+  display: grid;
+  grid-template-columns: 20px auto;
+  gap: 8px 9px;
+  justify-content: center;
+  border-right: 1px solid var(--line);
+}
+.profile-stats > div:last-child {
+  border: 0;
+}
+.profile-stats svg {
+  color: var(--blue);
+}
+.profile-stats strong {
+  font-size: 1.1rem;
+}
+.profile-stats span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  grid-column: 1/-1;
+  text-align: center;
+}
+.profile-description {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin: 18px 0 23px;
+}
+.profile-main h3 {
+  font-size: 0.9rem;
+}
+.profile-skills {
+  margin-top: 15px;
+}
+.profile-zones {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  color: var(--blue);
+}
+.profile-zones p {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.profile-zones strong {
+  display: block;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.profile-reviews {
+  display: grid;
+  gap: 17px;
+  margin-top: 23px;
+}
+.profile-reviews .review-card {
+  background: #fbfcfe;
+  box-shadow: none;
+}
+.profile-booking {
+  position: sticky;
+  top: 25px;
+  align-self: start;
+  padding: 25px;
+}
+.profile-availability {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  color: #319469;
+  background: #edf9f2;
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 0.7rem;
+}
+.profile-availability.is-unavailable {
+  color: #7b8799;
+  background: #f2f4f7;
+}
+.profile-booking h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 23px;
+}
+.profile-booking > p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 13px;
+}
+.profile-price {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.profile-price > span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.profile-price strong {
+  font-family: Manrope, sans-serif;
+  font-size: 1.9rem;
+}
+.profile-price small {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.profile-booking-info {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+  color: #8a9ab0;
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+.profile-booking h3 {
+  font-size: 0.875rem;
+}
+.profile-booking .profile-hours {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.75rem;
+}
+.profile-booking .profile-identity-note {
+  font-size: 0.75rem;
+  border-top: 1px solid var(--line);
+  padding-top: 17px;
+  margin-top: 20px;
+  color: #8c98a9;
+}
+@media (max-width: 900px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+  .profile-booking {
+    position: static;
+    grid-row: 2;
+  }
+  .profile-booking h2 br {
+    display: none;
+  }
+  .profile-booking .profile-price {
+    display: block;
+  }
+  .profile-price strong {
+    display: block;
+    margin-block: 7px;
+  }
+  .profile-price small {
+    display: block;
+  }
+  .profile-booking .btn {
+    max-width: 380px;
+  }
+  .profile-booking-info {
+    max-width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .profile-identity {
+    gap: 15px;
+  }
+  .profile-identity .avatar {
+    width: 77px;
+    height: 77px;
+  }
+  .profile-identity h1 {
+    font-size: 1.35rem;
+    gap: 6px;
+  }
+  .profile-identity > div > p {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+  .profile-identity .worker-rating > span:last-child {
+    font-size: 0.75rem;
+  }
+  .profile-stats {
+    margin-top: 22px;
+  }
+  .profile-stats strong {
+    font-size: 0.9rem;
+  }
+  .profile-stats span {
+    font-size: 0.75rem;
+  }
+  .profile-stats > div {
+    gap: 7px;
+  }
+  .profile-description {
+    font-size: 0.875rem;
+  }
+  .profile-main .section-heading {
+    align-items: center;
+  }
+  .profile-main .section-heading h2 {
+    font-size: 1.05rem;
+  }
+}

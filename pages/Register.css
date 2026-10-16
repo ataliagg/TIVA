@@ -1,0 +1,35 @@
+.register-page {
+  max-width: 740px;
+}
+.register-page .page-heading {
+  text-align: center;
+  padding: 10px 0;
+}
+.register-page .page-heading h1 {
+  font-size: 2rem;
+  margin-top: 13px;
+}
+.register-page .eyebrow {
+  font-size: 0.75rem;
+}
+.register-card {
+  padding: 35px;
+}
+.register-card > .auth-type-selector {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.register-card .check-label .text-link {
+  font-size: 0.8rem;
+}
+@media (max-width: 600px) {
+  .register-card {
+    padding: 21px;
+  }
+  .register-page .page-heading h1 {
+    font-size: 1.65rem;
+  }
+  .register-page .page-heading p {
+    font-size: 0.85rem;
+  }
+}
