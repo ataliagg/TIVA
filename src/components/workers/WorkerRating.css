@@ -1,0 +1,19 @@
+.worker-rating {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+.rating-stars {
+  display: flex;
+  gap: 2px;
+  color: #f8b529;
+}
+.worker-rating strong {
+  color: #374357;
+}
+.worker-rating > span:last-child:not(.rating-stars) {
+  color: var(--muted);
+  font-size: 0.75rem;
+}

@@ -1,0 +1,88 @@
+.how-it-works {
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding-block: 46px 43px;
+}
+.how-heading {
+  text-align: center;
+}
+.how-heading .eyebrow {
+  font-size: 0.75rem;
+}
+.how-heading h2 {
+  margin-top: 10px;
+  font-size: 1.55rem;
+}
+.how-heading > p {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  margin-top: 37px;
+}
+.how-step {
+  text-align: center;
+  position: relative;
+}
+.how-step-icon {
+  width: 57px;
+  height: 57px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: #eaf2ff;
+  color: var(--blue);
+  margin: 0 auto 18px;
+  position: relative;
+}
+.how-step-icon > span {
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  width: 23px;
+  height: 23px;
+  background: white;
+  border: 1px solid #dce5f4;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  color: #89a5ce;
+  display: grid;
+  place-items: center;
+}
+.how-step:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: calc(50% + 45px);
+  width: calc(100% - 55px);
+  border-top: 1px dashed #cedcf0;
+}
+.how-step h3 {
+  font-size: 0.86rem;
+}
+.how-step p {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .how-steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 22px;
+  }
+  .how-step:not(:last-child):after {
+    display: none;
+  }
+  .how-heading h2 {
+    font-size: 1.35rem;
+  }
+  .how-heading p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,25 @@
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.reviews-section .section-heading p {
+  font-size: 0.85rem;
+}
+.reviews-section .tag {
+  font-size: 0.75rem;
+  color: #8294ad;
+  background: #eef2f8;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .reviews-section .section-heading {
+    display: block;
+  }
+  .reviews-section .tag {
+    margin-top: 13px;
+  }
+}

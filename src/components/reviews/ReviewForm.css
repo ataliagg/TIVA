@@ -1,0 +1,91 @@
+.review-form > h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 30px;
+}
+.review-form > p {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+.review-stars {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border: 0;
+  padding: 0;
+  margin: 25px 0 12px;
+}
+.review-stars label {
+  cursor: pointer;
+  color: #dbe2ed;
+  position: relative;
+}
+.review-stars input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.review-stars label:focus-within {
+  outline: 2px solid var(--blue);
+  outline-offset: 5px;
+  border-radius: 5px;
+}
+.review-stars label.selected {
+  color: #ffc233;
+}
+.review-rating-label {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #93a0b3;
+  margin-bottom: 30px;
+  min-height: 18px;
+}
+.review-form .field {
+  gap: 9px;
+}
+.review-form .field > .muted {
+  display: inline;
+  font-size: 0.75rem;
+  margin-top: -5px;
+}
+.review-highlights {
+  margin: 24px 0;
+}
+.review-highlights > p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.review-highlights > div {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.review-highlights button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 10px 14px;
+  background: white;
+  color: #708099;
+  font-size: 0.75rem;
+}
+.review-highlights button.selected {
+  color: var(--blue);
+  border-color: #a6c9ff;
+  background: var(--pale);
+}
+@media (max-width: 450px) {
+  .review-stars {
+    gap: 11px;
+  }
+  .review-stars svg {
+    width: 37px;
+  }
+}

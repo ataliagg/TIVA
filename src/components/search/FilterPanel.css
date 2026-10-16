@@ -1,0 +1,96 @@
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  align-self: start;
+  position: sticky;
+  top: 24px;
+}
+.filter-panel-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  padding-bottom: 17px;
+  border-bottom: 1px solid var(--line);
+}
+.filter-panel-title h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+.filter-panel-title button {
+  font-size: 0.75rem;
+}
+.filter-panel .field {
+  font-size: 0.8rem;
+}
+.filter-panel .field select {
+  font-size: 0.8rem;
+  padding-inline: 10px;
+}
+.filter-panel .field input[type='range'] {
+  padding: 0;
+  border: 0;
+  min-height: 24px;
+  accent-color: var(--blue);
+}
+.filter-price {
+  font-size: 0.9rem;
+  color: var(--blue);
+  margin-top: 3px;
+}
+.filter-range-labels {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.filter-checks {
+  display: grid;
+  gap: 16px;
+}
+.filter-checks .check-label {
+  font-size: 0.8rem;
+  align-items: center;
+}
+.filter-footnote {
+  display: flex;
+  gap: 8px;
+  color: #8794a8;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+.filter-footnote svg {
+  margin-top: 3px;
+}
+@media (max-width: 760px) {
+  .filter-panel {
+    position: static;
+    margin-bottom: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .filter-panel-title,
+  .filter-footnote {
+    grid-column: 1/-1;
+  }
+  .filter-checks {
+    justify-content: start;
+  }
+}
+@media (max-width: 460px) {
+  .filter-panel {
+    grid-template-columns: 1fr;
+  }
+  .filter-panel-title,
+  .filter-footnote {
+    grid-column: auto;
+  }
+}

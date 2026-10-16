@@ -1,0 +1,70 @@
+.image-uploader-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.upload-zone {
+  border: 1px dashed #b8cce8;
+  background: #f8fbff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 135px;
+  min-height: 125px;
+  cursor: pointer;
+  color: var(--blue);
+  position: relative;
+}
+.upload-zone input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.upload-zone:focus-within {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+.upload-zone strong {
+  font-size: 0.78rem;
+}
+.upload-zone > span {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.image-uploader > p {
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-top: 12px;
+  line-height: 1.6;
+}
+.uploaded-image {
+  position: relative;
+  width: 135px;
+  height: 125px;
+}
+.uploaded-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.uploaded-image button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: white;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+}
+.image-uploader .form-error {
+  color: #bc3f35;
+}

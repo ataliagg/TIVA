@@ -1,0 +1,39 @@
+.trust-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding-block: 36px;
+}
+.trust-section > div {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+}
+.trust-section > div > span {
+  padding: 10px;
+  color: var(--blue);
+  background: #edf4ff;
+  border-radius: 12px;
+}
+.trust-section h3 {
+  font-size: 0.8rem;
+  margin: 3px 0 8px;
+}
+.trust-section p {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .trust-section {
+    grid-template-columns: 1fr;
+    gap: 23px;
+    padding-block: 30px;
+  }
+  .trust-section h3 {
+    font-size: 0.9rem;
+  }
+  .trust-section p {
+    font-size: 0.8rem;
+  }
+}

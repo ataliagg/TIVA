@@ -1,0 +1,27 @@
+.service-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+.service-categories .section-heading p {
+  font-size: 0.85rem;
+}
+@media (max-width: 900px) {
+  .service-categories-grid {
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .service-categories .section-heading p {
+    display: none;
+  }
+  .service-categories .section-heading h2 {
+    font-size: 1.25rem;
+  }
+  .service-categories .section-heading .text-link {
+    max-width: 83px;
+    text-align: right;
+    font-size: 0.75rem;
+  }
+}

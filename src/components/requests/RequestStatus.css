@@ -1,0 +1,30 @@
+.request-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border-radius: 7px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.status-pending {
+  background: #fff8e6;
+  color: #aa801c;
+}
+.status-confirmed {
+  background: #eaf8ef;
+  color: #29895b;
+}
+.status-finished {
+  background: #edf1f8;
+  color: #718097;
+}
+.status-cancelled {
+  background: #fff0ee;
+  color: #b6645b;
+}
+.status-quoted {
+  background: #edf3ff;
+  color: #467ac6;
+}

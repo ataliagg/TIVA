@@ -1,0 +1,33 @@
+.review-card {
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.review-card > p {
+  font-size: 0.86rem;
+  color: #657287;
+  margin: 17px 0 23px;
+  flex: 1;
+  line-height: 1.8;
+}
+.review-card-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.review-card-person strong {
+  font-size: 0.78rem;
+  display: block;
+}
+.review-card-person > div > span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  display: block;
+  margin-top: 4px;
+}
+.review-card .worker-rating > strong {
+  display: none;
+}

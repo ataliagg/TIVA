@@ -1,0 +1,101 @@
+.footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  padding: 48px 0 22px;
+  margin-top: 25px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: 45px;
+  padding-bottom: 42px;
+}
+.footer-brand p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 17px 0 14px;
+}
+.footer-brand > span {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.footer-grid h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.footer-grid > div > a:not(.logo) {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.footer-grid > div > a:hover {
+  color: var(--blue);
+}
+.footer-support p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.footer-grid .footer-support > a {
+  color: var(--blue);
+}
+.footer-bottom {
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+  font-size: 0.7rem;
+  color: #8b95a4;
+}
+.footer-bottom > div {
+  display: flex;
+  gap: 22px;
+}
+.footer-love {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.footer-love svg {
+  color: var(--blue);
+}
+@media (max-width: 900px) {
+  .footer-grid {
+    gap: 25px;
+  }
+  .footer-love {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .footer {
+    padding-bottom: 95px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .footer-support {
+    display: none;
+  }
+  .footer-brand {
+    grid-column: 1/-1;
+  }
+  .footer-brand p {
+    margin: 12px 0;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-bottom > div {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

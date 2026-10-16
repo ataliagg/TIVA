@@ -1,0 +1,23 @@
+.empty-state {
+  padding: 55px 25px;
+  text-align: center;
+  border: 1px dashed #d4dfed;
+  border-radius: 18px;
+  background: #fff;
+}
+.empty-state-icon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  background: var(--pale);
+  border-radius: 50%;
+  color: var(--blue);
+}
+.empty-state p {
+  color: var(--muted);
+  margin: 10px auto 20px;
+  max-width: 420px;
+  font-size: 0.95rem;
+}
